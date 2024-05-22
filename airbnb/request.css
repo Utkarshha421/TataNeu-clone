@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    height: 80px;
+    border-bottom: 1px solid #e6e5e5;
+}
+.logo{
+    height: 80px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#firsthalflogo{
+    height: 32px;
+    width: 100px;
+}
+#halflogo{
+    height: 50px;
+    width: 50px;
+    visibility: hidden;
+}
+.parent{
+    width: 88%;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.parent1{
+    width: 50%;
+    border: 1px solid blue;
+    margin-left: 32px;
+}
+.parent2{
+    width: 45%;
+    border: 1px solid red;
+}
+.RequestToBook{
+    height: 150px;
+    display: flex;
+    border: 1px solid green;
+    justify-content: start;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+.icondiv{
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.datesDiv{
+    /* border-bottom: 1px solid #e6e5e5; */
+    border: 1px solid green;
+}
+.datesDiv h2{
+    padding-bottom: 20px;
+}
+.datesDiv2{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.datesDiv21{
+    line-height: 28px;
+}
+.datesDiv2 a{
+    color: black;
+}
+.icondiv:hover{
+    cursor: pointer;
+    border-radius: 50%;
+    background-color:#f1efef ;
+}
+.payment{
+    border: 1px solid red;
+}
