@@ -4,81 +4,488 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-.navbar{
-    height: 80px;
-    border-bottom: 1px solid #e6e5e5;
+.navbar {
+  height: 80px;
+  border-bottom: 1px solid #d4d0d0;
 }
-.logo{
-    height: 80px;
-    width: 200px;
-    display: flex;
+.logo {
+  height: 80px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#firsthalflogo {
+  height: 32px;
+  width: 100px;
+  cursor: pointer;
+}
+#halflogo {
+  height: 50px;
+  width: 50px;
+  visibility: hidden;
+}
+.parent {
+  width: 88%;
+  /* border: 1px solid black; */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.parent1 {
+  width: 48%;
+  /* border: 1px solid blue; */
+  margin-left: 32px;
+}
+.RequestToBook {
+  height: 150px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+.icondiv {
+  height: 45px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.datesDiv {
+  border-bottom: 1px solid #d4d0d0;
+  /* border: 1px solid green; */
+}
+.datesDiv h2 {
+  padding-bottom: 20px;
+}
+.datesDiv2 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.datesDiv21 {
+  line-height: 28px;
+}
+.datesDiv2 a {
+  color: black;
+}
+.icondiv:hover {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #f1efef;
+}
+.payment {
+  /* border: 1px solid red; */
+}
+.Paywith {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardtypes {
+  width: 35%;
+  display: flex;
+  height: 85px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cardtypes img {
+  height: 30px;
+  width: 30px;
+}
+#rupay {
+  height: 10px;
+  width: 30px;
+  margin-top: 3px;
+}
+#mastercard {
+  height: 10px;
+  width: 30px;
+}
+#dinersclub {
+  height: 10px;
+  width: 30px;
+}
+.carddetails {
+  /* border: 1px solid blue; */
+}
+.nameofCard {
+  height: 60px;
+  border: 1px solid #d4d0d0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  margin-bottom: 15px;
+}
+.iconcard {
+  display: flex;
+  color: #524f4f;
+  justify-content: center;
+  align-items: center;
+}
+.nameofCard i {
+  font-size: 25px;
+}
+.iconcard i {
+  color: #bdb8b8;
+  margin-right: 15px;
+}
+#input1 {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #d4d0d0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 0px 15px;
+}
+#input11 {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #d4d0d0;
+  border-radius: 10px;
+  padding: 0px 15px;
+  margin-bottom: 35px;
+}
+.input21 {
+  width: 100%;
+  display: flex;
+}
+#input211 {
+  width: 50%;
+  height: 60px;
+  border: 1px solid #d4d0d0;
+  border-bottom-left-radius: 10px;
+  padding: 0px 15px;
+}
+#input212 {
+  width: 50%;
+  height: 60px;
+  border: 1px solid #d4d0d0;
+  border-bottom-right-radius: 10px;
+  padding: 0px 15px;
+  margin-bottom: 15px;
+}
+.message {
+  padding: 30px 0px;
+  border-top: 1px solid #d4d0d0;
+}
+.message p {
+  font-size: 14px;
+}
+.message h3 {
+  padding: 0px 0px 15px 0px;
+}
+.viganeshprofile {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 40%;
+  margin: 18px 0px;
+}
+.viganeshprofile img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.message textarea {
+  height: 120px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #524f4f;
+  padding: 12px 0px 0px 10px;
+}
+.policy {
+  padding: 30px 0px;
+  border-bottom: 1px solid #d4d0d0;
+  border-top: 1px solid #d4d0d0;
+}
+.policy p {
+  margin-top: 20px;
+}
+.policy a {
+  color: black;
+  font-weight: 600;
+}
+.GroundRules {
+  padding: 30px 0px;
+}
+.GroundRules p {
+  margin: 20px 0px;
+}
+.GroundRules ul {
+  padding-left: 18px;
+  line-height: 25px;
+}
+.reservation {
+  border-bottom: 1px solid #d4d0d0;
+  border-top: 1px solid #d4d0d0;
+  display: flex;
+  padding: 30px 0px;
+}
+.reservation i {
+  font-size: 18px;
+  margin-right: 20px;
+}
+.refundPolicy {
+  padding: 30px 0px;
+}
+.refundPolicy p {
+  font-size: 11px;
+  color: #444242;
+  line-height: 15px;
+}
+.refundPolicy a {
+  font-weight: 600;
+  color: black;
+}
+.refundPolicy button {
+  height: 56px;
+  width: 205px;
+  border-radius: 8px;
+  font-size: 18px;
+  color: white;
+  background-color: #e41d5c;
+  border: none;
+  cursor: pointer;
+  margin: 30px 0px 60px 0px;
+}
+.parent2 {
+  width: 42%;
+  /* border: 1px solid red; */
+}
+.BHKPOOL {
+  width: 95%;
+  border: 1px solid #d4d0d0;
+  border-radius: 10px;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.TeakwoodVilla {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.villaimg {
+  height: 95px;
+  width: 100px;
+  background-image: url("../img/villa.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+.infoaboutvilla {
+  width: 70%;
+}
+.infoaboutvilla p {
+  font-size: 14px;
+}
+.pricedetails {
+  border-bottom: 1px solid #d4d0d0;
+  border-top: 1px solid #d4d0d0;
+  width: 90%;
+  margin: auto;
+}
+.pricedetails h3 {
+  padding: 30px 0px;
+}
+.pricedetails1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.pricedetails11 {
+  height: 100px;
+}
+#pricedetails111 {
+  text-align: end;
+}
+.pricedetails11 p {
+  padding-bottom: 15px;
+}
+.pricedetails11 a {
+  color: black;
+}
+.totalprice {
+  height: 60px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.totalprice > p > a {
+  visibility: hidden;
+}
+.footer3 {
+  background-color: #f7f7f7;
+  border-top: 1px solid #dddddd;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+}
+.footer31 {
+  display: flex;
+  font-size: 14px;
+}
+.footer31 a {
+  text-decoration: none;
+}
+.footer31 a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.footer32 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 25%;
+}
+.footer32 i {
+  font-size: 20px;
+  color: black;
+}
+#globe {
+  font-size: 14px;
+  padding-right: 8px;
+}
+
+@media screen and (max-width: 1280px) {
+  .parent {
+    width: 92%;
+  }
+  .RequestToBook {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .parent {
+    width: 96%;
+  }
+  .RequestToBook {
+    width: 99%;
+  }
+  #firsthalflogo {
+    display: none;
+  }
+  #halflogo {
+    visibility: visible;
+    margin-right: 100px;
+  }
+  .footer3 {
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+  }
+  .footer31 {
+    margin-top: 20px;
+  }
+  .footer32 {
+    width: 35%;
+  }
 }
-#firsthalflogo{
-    height: 32px;
-    width: 100px;
-}
-#halflogo{
-    height: 50px;
-    width: 50px;
-    visibility: hidden;
-}
-.parent{
-    width: 88%;
-    /* border: 1px solid black; */
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-.parent1{
-    width: 50%;
-    border: 1px solid blue;
-    margin-left: 32px;
-}
-.parent2{
-    width: 45%;
-    border: 1px solid red;
-}
-.RequestToBook{
-    height: 150px;
-    display: flex;
-    border: 1px solid green;
+
+@media screen and (max-width: 768px) {
+  .Paywith {
+    flex-direction: column;
     justify-content: start;
-    align-items: center;
-    width: 90%;
-    margin: auto;
-}
-.icondiv{
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  .cardtypes {
+    width: 55%;
     height: 45px;
-    width: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  }
+  .infoaboutvilla {
+    width: 50%;
+  }
 }
-.datesDiv{
-    /* border-bottom: 1px solid #e6e5e5; */
-    border: 1px solid green;
-}
-.datesDiv h2{
-    padding-bottom: 20px;
-}
-.datesDiv2{
-    display: flex;
+
+@media screen and (max-width: 430px) {
+  .navbar {
+    display: none;
+  }
+  .RequestToBook {
+    height: 80px;
     justify-content: space-between;
-    padding-bottom: 20px;
-}
-.datesDiv21{
-    line-height: 28px;
-}
-.datesDiv2 a{
-    color: black;
-}
-.icondiv:hover{
-    cursor: pointer;
-    border-radius: 50%;
-    background-color:#f1efef ;
-}
-.payment{
-    border: 1px solid red;
+  }
+  .RequestToBook h1 {
+    font-size: 18px;
+    margin-right: 120px;
+  }
+  .parent {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .parent1 {
+    width: 95%;
+    margin: auto;
+  }
+  .parent2 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .totalprice > p > a {
+    visibility: visible;
+  }
+  .BHKPOOL {
+    width: 100%;
+    border: none;
+    border-radius: 0%;
+    border-bottom: 5px solid #d4d0d0;
+  }
+  .Paywith {
+    display: flex;
+    justify-content: start;
+  }
+  .cardtypes {
+    display: none;
+  }
+  .nameofCard {
+    margin: 15px 0px;
+  }
+  #input1 {
+    display: none;
+  }
+  #input11 {
+    display: none;
+  }
+  .input21 {
+    display: none;
+  }
+  .reservation {
+    font-size: 12px;
+  }
+  .refundPolicy button {
+    width: 99%;
+    margin: auto;
+  }
+  .refundPolicy p {
+    margin-bottom: 20px;
+  }
+  .footer3 {
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: flex-start;
+  }
+  .footer31 {
+    margin-top: 20px;
+  }
+  .footer32 {
+    width: 65%;
+  }
+  .footer32 i {
+    display: none;
+  }
 }
