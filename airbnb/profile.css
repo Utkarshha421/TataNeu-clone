@@ -1,0 +1,335 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+    background-color: white;
+  height: 78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+  position: sticky;
+    top: 0;
+    left: 0;
+}
+.navpart {
+  /* border: 1px solid red; */
+  width: 88%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  /* border: 1px solid black; */
+  cursor: pointer;
+  height: 55px;
+  width: 15%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#firsthalflogo {
+  height: 32px;
+  width: 100px;
+}
+#halflogo {
+  height: 45px;
+  width: 45px;
+  visibility: hidden;
+}
+.logo i {
+  visibility: hidden;
+}
+.user {
+  height: 52px;
+  width: 25%;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 15px;
+}
+#AirbnbHome {
+  /* border: 1px solid red; */
+  width: 50%;
+  height: 45px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: end;
+  padding-top: 13px;
+}
+#AirbnbHome:hover {
+  cursor: pointer;
+  background-color: #f8f8f8;
+  border-radius: 30px;
+}
+#globe:hover {
+  /* border: 1px solid red; */
+  cursor: pointer;
+  background-color: #f8f8f8;
+  height: 45px;
+  width: 16%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#globe i {
+  font-size: 16px;
+}
+#logIn {
+  width: 28%;
+  height: 48px;
+  border: 1px solid #dddddd;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#logIn:hover {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.1) 0px 1px 6px 0px;
+}
+#usericon {
+  font-size: 24px;
+  color: #6a6a6a;
+}
+#baricon {
+  font-size: 16px;
+  color: #595959;
+}
+.parent {
+  /* border: 2px solid red; */
+  width: 77%;
+  margin: auto;
+}
+.account {
+  height: 68px;
+  /* border: 1px solid blue; */
+  margin: 40px 0px 20px 0px;
+}
+.accountheading {
+  /* border: 1px solid blue; */
+  width: 17%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.accountheading i {
+  font-size: 12px;
+}
+.main {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+}
+.personalInformation {
+  /* border: 1px solid black; */
+  width: 58%;
+  margin-top: 10px;
+}
+.perInfo {
+  border-bottom: 1px solid #dddddd;
+  padding: 30px 0px;
+}
+.perInfo1 {
+  /* border: 1px solid rgb(73, 78, 151); */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.perInfo1 a {
+  font-size: 14px;
+  color: black;
+  font-weight: 600;
+}
+#name {
+  font-size: 14px;
+  color: #6a6a6a;
+}
+.FAQ {
+  border: 1px solid #dddddd;
+  width: 32.5%;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+.FAQ1 {
+  border-bottom: 1px solid #dddddd;
+  width: 85%;
+  margin: auto;
+  margin-top: 23px;
+}
+.FAQ1 img {
+  height: 50px;
+  width: 50px;
+}
+.FAQ11 {
+  /* width: 80%; */
+  padding: 10px 0px;
+  line-height: 30px;
+}
+.FAQ1 p {
+  color: #6a6a6a;
+  line-height: 20px;
+  padding: 10px 0px 35px 0px;
+}
+.FAQ1 i {
+  font-size: 48px;
+  color: #e31c5f;
+}
+#FAQ1 {
+  border: none;
+}
+.footer {
+  /* border: 1px solid black;  */
+  background-color: #f7f7f7;
+  margin-top: 50px;
+}
+.footer2 {
+  border-top: 1px solid #dddddd;
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 250px 50px 0px;
+}
+.footer21 {
+  line-height: 40px;
+}
+.footer21 h5 {
+  padding-bottom: 10px;
+}
+.footer21 p {
+  font-size: 16px;
+  line-height: 30px;
+}
+.footer21 p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.footer3 {
+  width: 90%;
+  border-top: 1px solid #dddddd;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+.footer31 {
+  display: flex;
+  font-size: 14px;
+}
+.footer31 li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.footer32 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 25%;
+}
+.footer32 i {
+  font-size: 20px;
+}
+#globe {
+  font-size: 14px;
+  padding-right: 8px;
+}
+
+@media screen and (max-width: 1280px) {
+  .parent {
+    width: 82%;
+  }
+  .footer2 {
+    padding: 50px 150px 50px 0px;
+  }
+  .footer3 {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .navpart {
+    width: 94%;
+  }
+  #firsthalflogo {
+    display: none;
+  }
+  #halflogo {
+    visibility: visible;
+  }
+  .user {
+    width: 35%;
+  }
+  .parent {
+    width: 94%;
+  }
+  .footer3 {
+    height: 100px;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .footer32 {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .accountheading {
+    width: 26%;
+  }
+  .footer2 {
+    flex-direction: column;
+    padding: 10px 150px 10px 50px;
+  }
+  .footer21 {
+    margin-bottom: 25px;
+  }
+  #footer21{
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    padding: 20px 0px;
+  }
+}
+@media screen and (max-width: 430px) {
+  #firsthalflogo {
+    display: none;
+  }
+  #halflogo {
+    display: none;
+  }
+  .logo i {
+    visibility: visible;
+  }
+  .user {
+    display: none;
+  }
+  .navbar {
+    height: 70px;
+    border-bottom: none;
+  }
+  .FAQ{
+    display: none;
+  }
+  .personalInformation {
+    width: 96%;
+    margin: auto;
+    margin-top: 0px;
+  }
+  .accountheading{
+    display: none;
+    margin-bottom: 0px;
+  }
+  .account {
+    height: 68px;
+    margin: 30px 0px 0px 0px;
+  }
+  .account h1{
+    font-size: 22px;
+  }
+  .footer{
+    display: none;
+  }
+}
