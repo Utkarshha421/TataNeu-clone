@@ -1,0 +1,346 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar {
+  background-color: white;
+  height: 78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+.navpart {
+  /* border: 1px solid red; */
+  width: 96%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  /* border: 1px solid black; */
+  cursor: pointer;
+  height: 55px;
+  width: 15%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+#firsthalflogo {
+  height: 32px;
+  width: 100px;
+}
+#halflogo {
+  height: 45px;
+  width: 45px;
+  visibility: hidden;
+}
+.logo i {
+  visibility: hidden;
+}
+.user {
+  height: 52px;
+  width: 25%;
+  /* border: 1px solid blue; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 15px;
+}
+#AirbnbHome {
+  /* border: 1px solid red; */
+  width: 50%;
+  height: 45px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: end;
+  padding-top: 13px;
+}
+#AirbnbHome:hover {
+  cursor: pointer;
+  background-color: #f8f8f8;
+  border-radius: 30px;
+}
+#globe:hover {
+  /* border: 1px solid red; */
+  cursor: pointer;
+  background-color: #f8f8f8;
+  height: 45px;
+  width: 16%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#globe i {
+  font-size: 16px;
+}
+#logIn {
+  width: 28%;
+  height: 48px;
+  border: 1px solid #dddddd;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#logIn:hover {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.1) 0px 1px 6px 0px;
+}
+#usericon {
+  font-size: 24px;
+  color: #6a6a6a;
+}
+#baricon {
+  font-size: 16px;
+  color: #595959;
+}
+.parent {
+  /* border: 1px solid red; */
+  display: flex;
+}
+.wishlist {
+  /* border: 1px solid black; */
+  width: 62%;
+}
+.header {
+  border-bottom: 1px solid #dddddd;
+  padding: 20px 18px 12px 18px;
+  position: fixed;
+  top: 10;
+  left: 0;
+  background-color: white;
+  width: 62%;
+}
+.headerHeading {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.headerHeading1 {
+  /* border: 1px solid black; */
+  display: flex;
+  width: 25%;
+  justify-content: space-around;
+}
+.shareicon {
+  /* border: 1px solid black; */
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.buttondiv {
+  /* border: 1px solid red; */
+  display: flex;
+  width: 24%;
+  justify-content: space-between;
+}
+.msg1div {
+  border: 1px solid #dddddd;
+  height: 40px;
+  border-radius: 30px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #595959;
+}
+#msg2div {
+  width: 43%;
+}
+.msg1div:hover {
+  /* border: 1px solid black; */
+  cursor: pointer;
+}
+#body {
+  width: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 130px;
+}
+.productCard {
+  /* border: 2px solid blue; */
+  height: 350px;
+  width: 30%;
+  margin-bottom: 25px;
+}
+.cardBackGroundImg {
+  width: 100%;
+  /* border: 2px solid purple; */
+  height: 250px;
+  border-radius: 20px;
+  background-size: cover;
+  background-image: url("https://a0.muscache.com/im/pictures/miso/Hosting-611964103002302908/original/ede7b8fc-9f6a-40ec-8f58-45b19d941a18.jpeg?im_w=720");
+  margin-bottom: 12px;
+}
+.cardBackGroundImg1 {
+  width: 100%;
+  /* border: 2px solid purple; */
+  height: 300px;
+  border-radius: 20px;
+  background-size: cover;
+  background-image: url("../img/img1.png");
+  background-position: center;
+  margin-bottom: 12px;
+}
+.imgOver {
+  padding-top: 10px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.imgOver > p:nth-child(1) {
+  text-align: center;
+  background-color: white;
+  padding: 5px;
+  width: 56%;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+#click {
+  font-size: 24px;
+  color: white;
+}
+.imgOver > i {
+  font-size: 24px;
+  color: rgb(238, 24, 95);
+}
+.cardText > p {
+  color: #7b7d81;
+  font-size: 14px;
+  padding: 2px 0px;
+}
+
+.cardText > p:nth-child(4) {
+  padding: 6px 0px;
+}
+.cardText > p > b {
+  color: black;
+}
+.cardTextTitleSection {
+  font-size: 14px;
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+}
+.cardTextTitleSection > p:nth-child(2) > i {
+  font-size: 12px;
+}
+
+.map {
+  /* border: 1px solid purple; */
+  width: 38%;
+  position: fixed;
+  top: 10;
+  right: 0;
+  height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .navpart {
+    width: 94%;
+  }
+  #firsthalflogo {
+    display: none;
+  }
+  #halflogo {
+    visibility: visible;
+  }
+  .user {
+    width: 35%;
+  }
+  .wishlist {
+    width: 51%;
+  }
+  .map {
+    width: 45%;
+  }
+  .header {
+    width: 54%;
+  }
+  .headerHeading1 {
+    width: 35%;
+  }
+  .shareicon {
+    width: 15%;
+  }
+  .buttondiv {
+    width: 34%;
+  }
+  #body {
+    justify-content: space-evenly;
+  }
+  .productCard {
+    height: 350px;
+    width: 49%;
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 768px) {
+    .wishlist {
+        width: 100%;
+      }
+      .map {
+        display: none;
+    }
+      .header {
+        width: 100%;
+      }
+      .headerHeading1 {
+        width: 35%;
+      }
+      .shareicon {
+        width: 15%;
+      }
+      .buttondiv {
+        width: 34%;
+      }
+      #body {
+        justify-content: space-evenly;
+      }
+      .productCard {
+        width: 45%;
+        height: 400px;
+      }
+      .cardBackGroundImg {
+        height: 300px;
+      }
+}
+@media screen and (max-width: 430px) {
+    .navbar{
+        display: none;
+    }
+    .header {
+        width: 100%;
+      }
+      .headerHeading1 {
+        width: 45%;
+      }
+      .shareicon {
+        width: 20%;
+      }
+      .buttondiv {
+        width: 44%;
+      }
+      .productCard {
+        width: 85%;
+        height: 450px;
+      }
+      .cardBackGroundImg {
+        height: 350px;
+      }
+}
